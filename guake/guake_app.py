@@ -1014,8 +1014,7 @@ class Guake(SimpleGladeApp):
         """
 
         def callback(*args):
-            if 0 <= N < self.get_notebook().get_n_pages():
-                self.get_notebook().set_current_page(N)
+            os.system("/bin/bash -c 'tmux select-window -t %d'" % (N + 1))
             return True
 
         return callback

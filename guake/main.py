@@ -420,6 +420,7 @@ def main():
         print('VTE: {}'.format(vte_version()))
         print('VTE runtime: {}'.format(vte_runtime_version()))
         print('Gtk: {}'.format(gtk_version()))
+        print('Tmux hack enabled')
         sys.exit(0)
 
     if options.save_preferences and options.restore_preferences:
